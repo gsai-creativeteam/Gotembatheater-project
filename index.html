@@ -12,6 +12,14 @@
       background: #f7f7f7;
       color: #333;
     }
+    header {<style>
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+      color: #333;
+    }
     header {
       background: #222;
       color: white;
@@ -65,12 +73,28 @@
       background: #eee;
       font-size: 0.9rem;
     }
+    /* 既存のスマホ用 */
     @media (max-width: 600px) {
       nav {
         flex-direction: column;
       }
     }
-  </style>
+    /* タブレットにも対応する追加分 */
+    @media (max-width: 1024px) {
+    nav {
+      flex-direction: column;
+    }
+    section {
+      padding: 1rem;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+</style>
 </head>
 <body>
 
